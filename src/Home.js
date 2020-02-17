@@ -9,7 +9,7 @@ export default class Home extends Component {
         searchQuery: this.props.match.params.name,
         characters: [],
     }
-    
+
     async componentDidMount() {
         if (this.props.match.params.name) {
             const data = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex?pokemon=${this.props.match.params.name}`)
@@ -17,20 +17,21 @@ export default class Home extends Component {
             this.setState({ characters: data.body.results })
         }
     }
-    
+
     handleSearch = async (e) => {
         e.preventDefault();
 
         const data = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex/?pokemon=${this.state.searchQuery}`)
 
         this.setState({
-            characters: data.body.results, })
+            characters: data.body.results,
+        })
 
         this.props.history.push(this.state.searchQuery)
-               
+
     }
-    
-        handleChange = (e) => this.setState({ searchQuery: e.target.value })
+
+    handleChange = (e) => this.setState({ searchQuery: e.target.value })
 
     render() {
         return (

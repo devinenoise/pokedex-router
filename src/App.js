@@ -20,8 +20,8 @@ export default class App extends Component {
       <Router>
         <Header />
         <header>
-        <Link className="nav" to="/">Home</Link>
-        <Link className="nav" to="/about-me/a">About</Link>
+          <Link className="nav" to="/">Home</Link>
+          <Link className="nav" to="/about-me/a">About</Link>
         </header>
         <Switch>
           <Route exact path="/:name?" component={Home} />
