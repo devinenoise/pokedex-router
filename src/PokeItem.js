@@ -7,6 +7,7 @@ export default class PokeItem extends Component {
         const { character } = this.props;
 
         return (
+            
             <div className="container">
 
                 <h3 className="creature">{this.props.character.pokemon}</h3>
@@ -24,6 +25,7 @@ export default class PokeItem extends Component {
                     src={this.props.character.url_image} />
 
             </div>
+            
         )
     }
 }

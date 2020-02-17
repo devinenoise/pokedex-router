@@ -11,27 +11,27 @@ import './App.css';
 
 export default class App extends Component {
   //setting empty state
-  
 
-render() {
 
-  return (
+  render() {
+
+    return (
 
       <Router>
-      <Header />
-      
-      <Link className="nav" to="/">Home</Link>
-      <Link className="nav" to="/about-me/a">About</Link>
-      
-      <Switch>
-      <Route exact path="/:name?" component={Home} />
+        <Header />
+        <header>
+        <Link className="nav" to="/">Home</Link>
+        <Link className="nav" to="/about-me/a">About</Link>
+        </header>
+        <Switch>
+          <Route exact path="/:name?" component={Home} />
 
-      <Route path="/about-me/" component={About} />
+          <Route path="/about-me/" component={About} />
 
-      <Route exact path="/pokemon/:charId" component ={Detail} />
-    
-      </Switch>
+          <Route path="/pokemon/:pokeId" component={Detail} />
+
+        </Switch>
       </Router>
-  );
-}
+    );
+  }
 }

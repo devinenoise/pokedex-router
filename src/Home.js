@@ -36,14 +36,19 @@ export default class Home extends Component {
         return (
             <div>
                 <header>
-                <SearchBar searchQuery={this.state.searchQuery} handleSearch={this.handleSearch} handleChange={this.handleChange} />
-                </header>
-            <ul>
-                {this.state.characters.map(character => <Link to={`characters/${character.name}`}>
-                    <PokeItem character={character} />
-                </Link>)}
 
-            </ul>
+                    <SearchBar searchQuery={this.state.searchQuery} handleSearch={this.handleSearch} handleChange={this.handleChange} />
+
+                </header>
+                <ul>
+
+                    {this.state.characters.map(character =>
+
+                        <Link to={`pokemon/${character.pokemon}`}>
+                            <PokeItem character={character} />
+                        </Link>)}
+
+                </ul>
             </div>
         );
     }

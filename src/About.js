@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class About extends Component {
     render() {
         return (
-            <div>
+            <div className="about">
                 <h2>About The Pokedex</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend ornare purus, eu ornare sapien pulvinar at. Quisque finibus id ipsum ac fermentum. Phasellus sit amet bibendum neque. Proin ut orci varius, laoreet nulla at, ullamcorper enim. Donec interdum sapien in urna dictum rutrum. Aliquam at neque luctus, ultrices ex ut, eleifend orci. Nam fermentum rutrum est. Pellentesque eu mauris non tellus mollis blandit cursus eu sem. Nunc tempus ante ut venenatis pellentesque. Fusce accumsan tincidunt eros, et pellentesque nisi suscipit aliquam. Nunc rhoncus odio ante, sit amet pulvinar tellus vestibulum bibendum. Mauris luctus quam eu nulla euismod, ac imperdiet velit varius.
 
