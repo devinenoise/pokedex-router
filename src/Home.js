@@ -11,8 +11,8 @@ export default class Home extends Component {
     }
     
     async componentDidMount() {
-        if (this.props.match.params.name) {
-            const data = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex?pokemon=${this.props.match.params.name}`)
+        if (this.props.match.params.pokemon) {
+            const data = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex?pokemon=${this.props.match.params.pokemon}`)
 
             this.setState({ characters: data.body.results })
         }

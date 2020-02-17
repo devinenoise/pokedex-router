@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App.js correctly 1`] = `
+Array [
+  <div>
+    <header>
+      <img
+        alt="poke ball"
+        class="pokeball"
+        src="./Poke_Ball.png"
+      />
+      <img
+        alt="poke ball"
+        class="pokeballtwo"
+        src="./Poke_Ball.png"
+      />
+      <h1>
+        PokeDex PART 2
+      </h1>
+    </header>
+  </div>,
+  <header>
+    <a
+      className="nav"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="nav"
+      href="/about-me/a"
+      onClick={[Function]}
+    >
+      About
+    </a>
+  </header>,
+  <div>
+    <header>
+      <div
+        id="search"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <input
+            onChange={[Function]}
+            required={true}
+          />
+          <button>
+            Search
+          </button>
+        </form>
+      </div>
+    </header>
+    <ul />
+  </div>,
+]
+`;

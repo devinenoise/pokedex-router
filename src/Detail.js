@@ -21,8 +21,11 @@ export default class Detail extends Component {
 
         return (
             <div>
+
                 <h1 className="details">Details</h1>
+                
                 <PokeItem character={character} />
+            
             </div>
         )
     }
