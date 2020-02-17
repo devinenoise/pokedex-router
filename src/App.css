@@ -135,3 +135,9 @@ input {
 .about {
   margin-top: 40px;
 }
+
+.details {
+  color: black;
+  letter-spacing: .2rem;
+  font-size: 40px;
+}

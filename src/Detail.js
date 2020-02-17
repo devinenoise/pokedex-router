@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { getPokemon } from './PokemonApi.js'
 import PokeItem from './PokeItem.js';
-import SearchBar from './SearchOptions.js';
 
 export default class Detail extends Component {
     state = { character: {} }
@@ -22,6 +21,7 @@ export default class Detail extends Component {
 
         return (
             <div>
+                <h1 className="details">Details</h1>
                 <PokeItem character={character} />
             </div>
         )
